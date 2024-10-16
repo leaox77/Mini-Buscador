@@ -1,77 +1,67 @@
-/* Navbar.css */
-
-/* Estilos básicos del navbar */
-.navbar { /* Color de fondo oscuro */
-  height: 60px; /* Altura del navbar */
-  display: flex; /* Usamos flexbox */
-  justify-content: center; /* Centra el contenido horizontalmente */
-  align-items: center; /* Alinea verticalmente */
-  font-size: 1.2rem; /* Tamaño de fuente */
+.navbar {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
 }
 
-/* Contenedor para manejar la distribución de elementos */
 .navbar-container {
-  display: flex; /* Flexbox para organizar los elementos */
-  justify-content: space-between; /* Distribuye los items (logo y menú) */
-  align-items: center; /* Alineación vertical */
-  height: 100%; /* El contenedor ocupa toda la altura del navbar */
-  width: 100%; /* Ocupa todo el ancho disponible */
-  max-width: 1200px; /* Ancho máximo para no expandirse demasiado en pantallas grandes */
-  padding: 0 20px; /* Añade un poco de espacio a los lados */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
 }
 
-/* Estilos del logo */
 .navbar-logo {
-  color: #fff; /* Texto blanco */
-  font-size: 2rem; /* Tamaño del logo */
-  text-decoration: none; /* Elimina subrayado */
-  cursor: pointer; /* Cambia el cursor a pointer */
+  color: #fff;
+  font-size: 2rem;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-/* Estilos de la lista del menú de navegación */
 .nav-menu {
-  display: flex; /* Flexbox para organizar los enlaces en fila */
-  list-style: none; /* Elimina las viñetas de la lista */
-  margin: 0; /* Elimina los márgenes */
-  padding: 0; /* Elimina el padding */
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-/* Estilo para cada elemento del menú */
 .nav-item {
-  margin-left: 20px; /* Añade espacio entre los items */
+  margin-left: 20px;
 }
 
-/* Estilos de los enlaces */
 .nav-links {
-  color: #fff; /* Texto blanco */
-  text-decoration: none; /* Sin subrayado */
-  padding: 10px 20px; /* Espaciado interno */
-  border-radius: 4px; /* Bordes redondeados */
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* Efecto hover */
-.nav-links:hover { /* Fondo gris claro al hacer hover */
-  transform: scale(1.05); /* Ligeramente agrandar el botón */
+.nav-links:hover {
+  transform: scale(1.05);
 }
 
-/* Responsivo: para pantallas pequeñas */
 @media screen and (max-width: 960px) {
   .nav-menu {
-    flex-direction: column; /* Pasa de fila a columna */
-    width: 100%; /* El menú ocupa todo el ancho */
-    position: absolute; /* Se superpone al contenido */
-    top: 60px; /* Debajo del navbar */
-    left: -100%; /* Oculto por defecto */
-    transition: all 0.5s ease; /* Transición suave al aparecer */
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    transition: all 0.5s ease;
   }
 
   .nav-menu.active {
-    left: 0; /* Muestra el menú */
-    opacity: 1; /* Lo hace visible */
+    left: 0;
+    opacity: 1;
   }
 
   .nav-item {
-    margin: 0; /* Elimina el margen entre items */
+    margin: 0;
   }
 }
