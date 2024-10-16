@@ -1,0 +1,77 @@
+/* Navbar.css */
+
+/* Estilos básicos del navbar */
+.navbar { /* Color de fondo oscuro */
+  height: 60px; /* Altura del navbar */
+  display: flex; /* Usamos flexbox */
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Alinea verticalmente */
+  font-size: 1.2rem; /* Tamaño de fuente */
+}
+
+/* Contenedor para manejar la distribución de elementos */
+.navbar-container {
+  display: flex; /* Flexbox para organizar los elementos */
+  justify-content: space-between; /* Distribuye los items (logo y menú) */
+  align-items: center; /* Alineación vertical */
+  height: 100%; /* El contenedor ocupa toda la altura del navbar */
+  width: 100%; /* Ocupa todo el ancho disponible */
+  max-width: 1200px; /* Ancho máximo para no expandirse demasiado en pantallas grandes */
+  padding: 0 20px; /* Añade un poco de espacio a los lados */
+}
+
+/* Estilos del logo */
+.navbar-logo {
+  color: #fff; /* Texto blanco */
+  font-size: 2rem; /* Tamaño del logo */
+  text-decoration: none; /* Elimina subrayado */
+  cursor: pointer; /* Cambia el cursor a pointer */
+}
+
+/* Estilos de la lista del menú de navegación */
+.nav-menu {
+  display: flex; /* Flexbox para organizar los enlaces en fila */
+  list-style: none; /* Elimina las viñetas de la lista */
+  margin: 0; /* Elimina los márgenes */
+  padding: 0; /* Elimina el padding */
+}
+
+/* Estilo para cada elemento del menú */
+.nav-item {
+  margin-left: 20px; /* Añade espacio entre los items */
+}
+
+/* Estilos de los enlaces */
+.nav-links {
+  color: #fff; /* Texto blanco */
+  text-decoration: none; /* Sin subrayado */
+  padding: 10px 20px; /* Espaciado interno */
+  border-radius: 4px; /* Bordes redondeados */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+}
+
+/* Efecto hover */
+.nav-links:hover { /* Fondo gris claro al hacer hover */
+  transform: scale(1.05); /* Ligeramente agrandar el botón */
+}
+
+/* Responsivo: para pantallas pequeñas */
+@media screen and (max-width: 960px) {
+  .nav-menu {
+    flex-direction: column; /* Pasa de fila a columna */
+    width: 100%; /* El menú ocupa todo el ancho */
+    position: absolute; /* Se superpone al contenido */
+    top: 60px; /* Debajo del navbar */
+    left: -100%; /* Oculto por defecto */
+    transition: all 0.5s ease; /* Transición suave al aparecer */
+  }
+
+  .nav-menu.active {
+    left: 0; /* Muestra el menú */
+    opacity: 1; /* Lo hace visible */
+  }
+
+  .nav-item {
+    margin: 0; /* Elimina el margen entre items */
+  }
+}

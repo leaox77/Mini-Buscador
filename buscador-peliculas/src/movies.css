@@ -1,0 +1,25 @@
+.movies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .movie-card {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .movie-description {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    width: 100%;
+    padding: 10px;
+    display: none;
+  }
+  
+  .movie-card:hover .movie-description {
+    display: block;
+  }
+  
