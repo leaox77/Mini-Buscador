@@ -28,33 +28,47 @@ Antes de comenzar, asegúrate de tener instalado lo siguiente:
 
 ## Creacion del proyecto
 1. **Instalar Vite**
-   - npm create vite@latest nombre-del-proyecto --template react
+
+   ```bash
+   npm create vite@latest nombre-del-proyecto --template react
 
 2. **Navegar al directorio del proyecto**
-   - cd nombre-del-proyecto
+
+   ```bash
+   cd nombre-del-proyecto
 
 3. **Instalar dependecias** 
-   - npm install
-   - npm install react-router-dom just-debounce-it
+
+   ```bash
+   npm install
+   npm install react-router-dom just-debounce-it
 
 4. **Ejecutar el proyecto**
-   - npm run dev
-   esto iniciara un servidor local que se puede acceder con
-   - http://localhost:5173
+
+   ```bash
+   npm run dev
 
 
 ## Clonar el repositorio
 
 1. **Clonar**
-   - git clone https://github.com/leaox77/MIni-Buscador.git
+
+   ```bash
+   git clone https://github.com/leaox77/MIni-Buscador.git
 
 2. **Navegar al directorio clonado**
-   -cd nombre-del-repositorio
+
+   ```bash
+   cd nombre-del-repositorio
 
 3. **Instalar dependecias** 
-   - npm install
-   - npm install react-router-dom just-debounce-it
+
+   ```bash
+   npm install
+   npm install react-router-dom just-debounce-it
 
 4. **Ejecutar el proyecto**
-   - npm run dev
+
+   ```bash
+   npm run dev
    
