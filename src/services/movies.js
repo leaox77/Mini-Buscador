@@ -1,8 +1,10 @@
-const API_KEY = '4287ad07'
+import { OMDB_API_KEY as API_KEY } from "../constants"
+
 export const searchMovies = async ({search}) => {
     if (search == '') return null
 
     try {
+        console.log({API_KEY})
         const response = await fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&s=${search}`)
         const json = await response.json()
     

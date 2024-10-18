@@ -1,4 +1,4 @@
-const API_KEY = '/YYACViKkhm1wE68+j7xng==Be0bll28GMckLzsx'
+import { NINJA_API_KEY as API_KEY } from "../constants"
 
 export const searchActors = async ({ search }) => {
   if (search === '') return null
